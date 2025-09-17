@@ -6,9 +6,16 @@ const app = express()
 //- Route params => /users/2    BUSCAR, DELETAR OU ATUALIZAR ALGO ESPECÍFICO
 // - Request Body => {"name":"Aline", "age":39 } 
 
+// VERBOS HTTP
+
+//-GET => Buscar informação no back-end
+//-POST => Criar informação no back-end
+//-PUT / PATCH => Alteração/Atualização informação no back-end
+//-DELETE => Deletar informação no back-end
+
 app.get('/usuarios/:id', function (request, response) {
     console.log(request)
-    
+
 
     response.send('Batata com Abacate')
 
